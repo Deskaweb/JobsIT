@@ -39,7 +39,7 @@ ctrl.create = (req, res) => {
           });
           const puestoSaved = await newPuesto.save();
           // res.send('Funciona');
-          res.redirect('/puestos/' + puestoSaved.uniqueId);
+          res.redirect('/puestos/' + imageSaved.uniqueId);
         } else {
           await fs.unlink(puestoTempPath);
           res.status(500).json({ error: 'Only Images are allowed' });
