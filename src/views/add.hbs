@@ -1,0 +1,46 @@
+<div class="card">
+
+    <div class="card-header bg-dark">
+        <h3 class="card-title text-white">
+            <i class="far fa-image"></i> Carga una busqueda laboral
+        </h3>
+    </div>
+
+    <div class="card-body">
+        <form action="/puestos" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <input type="text" name="title" class="form-control" placeholder="Titulo de la imagen" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="empresa" class="form-control" placeholder="Empresa" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="text" name="horario" class="form-control" placeholder="Horario" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="text" name="ubicacion" class="form-control" placeholder="Ubicacion" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="text" name="salario" class="form-control" placeholder="Salario" required></textarea>
+            </div>
+            <div class="form-group">
+                <textarea name="description" rows="10" class="form-control" placeholder="Descripcion de la imagen"
+                    required></textarea>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="custom-file">
+                        <input type="file" name="puesto" class="custom-file-input" id="inputGroupFile" aria-describedby="inputGroupFileAddon"
+                            required />
+                        <label class="custom-file-label" for="inputGroupFile">Selecciona imagen de la empresa</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success">
+                    <i class="fa fa-upload"></i> Publicar busqueda
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
